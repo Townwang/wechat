@@ -13,7 +13,7 @@
 implementation 'com.townwang:wechat:1.0.2'
 ```
 ### 下载Simple查看效果
- 蓝奏云下载地址:[![apk](https://img.shields.io/badge/Apk-v1.0-green)](https://town.lanzous.com/ifoDvm2820j)
+ 蓝奏云下载地址:  [![apk](https://img.shields.io/badge/Apk-v1.0-green)](https://town.lanzous.com/ifoDvm2820j)
 ## 打开捐赠
 
 ### Kotlin 使用方式
