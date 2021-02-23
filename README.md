@@ -8,15 +8,18 @@
 全网首发开发人员的微信API, 可无API,无权限实现一键关注公众号.一键利用微信内置浏览器打开任何网址. 附带功能 -> 个人捐赠,支付宝直接捐赠功能. api 正在不断新增
 
 ## 使用方式
+### 在*build.gradle*引入如下库
 ```kotlin
 implementation 'com.townwang:wechat:1.0.2'
 ```
+### 下载Simple查看效果
+ 蓝奏云下载地址:[![apk](https://img.shields.io/badge/Apk-v1.0-green)](https://town.lanzous.com/ifoDvm2820j)
 ## 打开捐赠
 
 ### Kotlin 使用方式
 ```kotlin
 /**
- * @param config 传入PayConfig对象 即: (支付宝key,支付收款码,微信收款码,微信提示消息[可选参数],支付宝提示消息[可选参数])
+ * @param config 传入PayConfig对象 即: (支付宝Code,支付收款码,微信收款码,微信提示消息[可选参数],支付宝提示消息[可选参数])
  */
  openDonate(
       PayConfig(
@@ -25,8 +28,6 @@ implementation 'com.townwang:wechat:1.0.2'
                )
           )
 ```
->> 参数说明 稍后wifi
-
 ### java 使用方式
 ```java
 /**
@@ -35,7 +36,9 @@ implementation 'com.townwang:wechat:1.0.2'
  PayConfig payConfig = new PayConfig("fkx083710xkhl4xuxzpud4e",R.mipmap.alipay, R.mipmap.wechat,null,null);
  WeChatHelper.openDonate(this,payConfig);
 ```
->> 参数说明 稍后wifi
+> 参数说明 
+[支付宝Code如何获取?](https://github.com/Townwang/wechat/wiki/%E5%85%AC%E4%BC%97%E5%8F%B7bizCode%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96%3F)
+
 ### 使用效果
 ![支付.png](https://i.loli.net/2021/02/23/AqX6DLNmtv1TQiM.png)
 ## 打开微信关注页
@@ -47,7 +50,6 @@ implementation 'com.townwang:wechat:1.0.2'
  */
 openWeChatToFollowInterface("MzA4NTY4ODUzOQ")
 ```
->> 参数说明 稍后wifi
 ### java 使用方式
 ```java
 /**
@@ -57,7 +59,9 @@ openWeChatToFollowInterface("MzA4NTY4ODUzOQ")
  */
  WeChatHelper.openWeChatToFollowInterface(this, "MzA4NTY4ODUzOQ",null);
 ```
->> 参数说明 稍后wifi
+> 参数说明
+[公众号bizCode如何获取?](https://github.com/Townwang/wechat/wiki/%E5%85%AC%E4%BC%97%E5%8F%B7bizCode%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96%3F)
+
 ### 使用效果
 ![device-2021-02-23-201605.png](https://i.loli.net/2021/02/23/bwcaiLTnN9KRPjk.png)
 ## 打开微信并加载Url
