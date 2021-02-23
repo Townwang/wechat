@@ -13,7 +13,7 @@ class KotlinActivity : AppCompatActivity() {
         binding.donate.setOnClickListener {
             openDonate(
                 PayConfig(
-                    "fkx083710xkhl4xuxzpud4e",
+                    "fkx12494k3mmyp9qni1bv54",
                     R.mipmap.alipay, R.mipmap.wechat
                 )
             )

@@ -8,7 +8,7 @@
 全网首发开发人员的微信API, 可无API,无权限实现一键关注公众号.一键利用微信内置浏览器打开任何网址. 附带功能 -> 个人捐赠,支付宝直接捐赠功能. api 正在不断新增
 
 ## 使用方式
-### 在*build.gradle*引入如下库
+### 在**build.gradle**引入如下库
 ```kotlin
 implementation 'com.townwang:wechat:1.0.2'
 ```
@@ -37,7 +37,7 @@ implementation 'com.townwang:wechat:1.0.2'
  WeChatHelper.openDonate(this,payConfig);
 ```
 > 参数说明 
-[支付宝Code如何获取?](https://github.com/Townwang/wechat/wiki/%E5%85%AC%E4%BC%97%E5%8F%B7bizCode%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96%3F)
+[支付宝Code如何获取?](https://github.com/Townwang/wechat/wiki/%E6%94%AF%E4%BB%98%E5%AE%9DCode%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%3F)
 
 ### 使用效果
 ![支付.png](https://i.loli.net/2021/02/23/AqX6DLNmtv1TQiM.png)
