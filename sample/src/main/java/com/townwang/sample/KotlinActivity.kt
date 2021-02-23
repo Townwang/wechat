@@ -22,7 +22,7 @@ class KotlinActivity : AppCompatActivity() {
             openWeChatToFollowInterface("MzA4NTY4ODUzOQ")
         }
         binding.openArticle.setOnClickListener {
-            openWeChatLoadUrl("https://mp.weixin.qq.com/s/Zrj_Dbx6COy8npwgPNf9tQ")
+            openWeChatLoadUrl("https://mp.weixin.qq.com/s/Zrj_Dbx6COy8npwgPNf9tQ","在下方留言代表你来过")
         }
         binding.aliPayScan.setOnClickListener {
             openAliPayScan()
