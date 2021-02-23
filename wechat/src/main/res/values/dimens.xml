@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="text32Size">32sp</dimen>
+    <dimen name="text16Size">16sp</dimen>
+    <dimen name="text14Size">14sp</dimen>
+    <dimen name="text12Size">12sp</dimen>
+    <dimen name="text10Size">10sp</dimen>
+    <dimen name="text8Size">8sp</dimen>
+</resources>

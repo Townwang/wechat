@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">weChat</string>
+
+    <string name="wei_zhi_title">捐赠·微信</string>
+    <string name="wei_zhi_tip">微信扫一扫，或者点击\"去捐赠\"，在微信页面右上角菜单中 \"从相册中选取二维码\"。</string>
+    <string name="ali_zhi_title">捐赠·支付宝</string>
+    <string name="ali_zhi_tip">支付宝扫一扫，或者点击\"去捐赠\"\n您点滴支持，是我们最大动力</string>
+    <string name="wei_loading">启动中…</string>
+    <string name="act_switch">点击任何地方切换捐赠方式</string>
+    <string name="donate">捐赠</string>
+    <string name="donate_qa">捐赠二维码</string>
+    <string name="go_donate">去捐赠</string>
+    <string name="wechat_is_not_installed">未安装微信~</string>
+    <string name="open_failed">打开失败</string>
+    <string name="open_donation_failed">打开捐赠失败</string>
+    <string name="url_code_error">urlCode有误!</string>
+    <string name="alipay_is_not_installed">未安装支付宝</string>
+
+</resources>
