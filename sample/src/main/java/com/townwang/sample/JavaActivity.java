@@ -16,7 +16,7 @@ public class JavaActivity extends AppCompatActivity {
         View rootView = binding.getRoot();
         setContentView(rootView);
         binding.donate.setOnClickListener(v->{
-           PayConfig payConfig = new PayConfig("fkx12494k3mmyp9qni1bv54",
+           PayConfig payConfig = new PayConfig("fkx083710xkhl4xuxzpud4e",
                     R.mipmap.alipay, R.mipmap.wechat,null,null);
             WeChatHelper.openDonate(this,payConfig);
         });
