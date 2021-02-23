@@ -1,0 +1,19 @@
+android{
+    buildTypes.all{
+        buildConfigField("String", "TOWN_THIS", '"__this__"')
+        buildConfigField("String", "TOWN_SEIZE", '"town^^^"')
+        buildConfigField("String", "WE_CHAT_PKG", '"亃亏亍乿乿五予争亓乿乿五亅于五亏亗于乾乾乾亃亅于五乿乿五予争亓乿乿亍亍"')
+        buildConfigField("String", "LAUNCHER_UI", '"乿乿五予争亓乿乿井争乿乿五予争亓乿乿乬亁井于亃予亅互五亏亗于乾乾乾乵五亏亗于乾乾乾乩"')
+        buildConfigField("String", "LAUNCHER_SHORTCUT", '"乬亁井于亃予亅互五亏亗于乾乾乾乵五亏亗于乾乾乾乩乿乿五予争亓乿乿书互亏亍乿乿五予争亓乿乿乳亃亁于亅互乿乿五予争亓乿乿乳五亏亗于乾乾乾予亏互五五亏亗于乾乾乾亃井五"')
+        buildConfigField("String", "SOS_WEB_VIEW_UI", '"乿乿五予争亓乿乿亐二井五亏亗于乾乾乾亇争于乿乿五予争亓乿乿亗亅亂亖五亏亗于乾乾乾争亅亗乿乿五予争亓乿乿井争乿乿五予争亓乿乿五亏亏二亓乿乿五予争亓乿乿了五亓乿乿五予争亓乿乿乳亏亓五亏亗于乾乾乾乷亅亂五亏亗于乾乾乾乶争亅亗乵五亏亗于乾乾乾乩"')
+        buildConfigField("String", "SOS_WEB_TITLE_KEY", '"五争五亏亗于乾乾乾五二亅"')
+        buildConfigField("String", "SOS_WEB_URL_KEY", '"互亁亗五亏亗于乾乾乾乵五亏亗于乾乾乾互五亏亗于乾乾乾二"')
+        buildConfigField("String", "SOS_WEB_PUB_TITLE", '"ꦸꦸꦸꦸ官方唯一公众号:关注了解后续更新"')
+        buildConfigField("String", "SOS_WEB_BIZ_URL", '"予五五亐亓乚乏乏亍亐乿乿五予争亓乿乿亗亅争五亏亗于乾乾乾亘争于乿乿五予争亓乿乿云云乿乿五予争亓乿乿亃亏亍乏亍亐乏亐互亏五亏亗于乾乾乾了争二亅乿亅亘五也亁亃五争亏于九予五亏亗于乾乾乾亏亍亅乆乿乿亂争亚九些亂争亚乣亏亄亅亝"')
+        buildConfigField("String", "EXTRA_KEY_PAY_CONFIG", '"亐亁亙乿亃亏于了争亇"')
+        buildConfigField("String", "ALI_PAY_SCAN", '"亁二争亐亁亙云互乚乏乏亐二亁五了亏互亍亁亐争乏亓五亁互五亏亗于乾乾乾五亁亐亐也亓亁乩亄九乑乐乐乐乐乐乐乗"')
+        buildConfigField("String", "ALI_PAY_BAR_CODE", '"亁二争亐亁亙云互乚乏乏亐二亁五了亏互亍亁亐争乏亓五亁五亏亗于乾乾乾互五亁亐亐也亓亁乩亄九乒乐乐乐乐乐乕乖"')
+        buildConfigField("String", "INTENT_URL_FORMAT", '"争于五亅于五乚乏乏亐二亁五了亏五亏亗于乾乾乾互亍亁亐争乏亓五亁互五亏亗于乾乾乾五亁亐亐也亓亁乩亄九乑乐乐乐乐乐乐乗乆亃二争亅于五乶亅互五亏亗于乾乾乾亓争亏于九乓乿乿五予争亓乿乿乗乎乐乎乐乗乑乘乆云互亃亏亄亅九予五五亐亓久乓乡久乒书久乒书云互乿乿五予争亓乿乿亁二争亐亁亙乿乿五予争亓乿乿亃亏亍久乒书些井互二乣亏亄亅亝久乓书乿亓久乓乤亗亅亂乍亏五予亅互乆乿五九乑乔乗乒乔乔乓乙乖乖乕乗乑乃乩于五亅于五乛亓亃予亅亍亅九亁二争亐亁亙云互乛亐亁亃事亁亇亅九亃亏亍乎亅亇乎亁于亄互亏争亄乎乡二争亐亁亙乧亐予亏于亅乛亅于亄"')
+
+    }
+}

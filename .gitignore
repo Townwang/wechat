@@ -72,3 +72,5 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 /.idea/
+/wechat/src/test/java/com/townwang/wechat/Encrypt.kt
+/wechat/src/main/java/com/townwang/wechat/SecretLetter.kt
