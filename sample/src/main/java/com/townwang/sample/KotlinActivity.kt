@@ -3,7 +3,9 @@ package com.townwang.sample
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.townwang.sample.databinding.ActivityMainBinding
+import com.townwang.wechat.PayConfig
 import com.townwang.wechat.*
+
 
 class KotlinActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
@@ -30,6 +32,5 @@ class KotlinActivity : AppCompatActivity() {
         binding.aliPayReceive.setOnClickListener {
             openAliPayBarCode()
         }
-
     }
 }

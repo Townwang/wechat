@@ -1,5 +1,3 @@
-@file:JvmMultifileClass
-@file:JvmName("WeChatHelper")
 package com.townwang.wechat
 import android.annotation.SuppressLint
 import android.content.Context
