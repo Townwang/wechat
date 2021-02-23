@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.townwang.sample.databinding.ActivityMainBinding
 import com.townwang.wechat.*
 
-class MainActivity : AppCompatActivity() {
+class KotlinActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
