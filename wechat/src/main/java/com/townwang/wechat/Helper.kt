@@ -1,11 +1,9 @@
 package com.townwang.wechat
-
 import android.annotation.SuppressLint
 import android.content.Context
 import androidx.annotation.DrawableRes
 import com.townwang.wechat.common.*
 import java.io.Serializable
-
 /**
  * weChat to scan
  */

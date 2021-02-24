@@ -1,8 +1,7 @@
 package com.townwang.wechat.common
-
 import org.junit.Test
-
 class IntentHelper {
+
     @Test
     fun goWeChatLauncherUI() {
 
