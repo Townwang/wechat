@@ -13,7 +13,7 @@
 implementation 'com.townwang:wechat:1.0.6'
 ```
 ### 下载Simple查看效果
- 蓝奏云下载地址:  [![apk](https://img.shields.io/badge/Apk-v1.0-green)](https://town.lanzous.com/ifoDvm2820j)
+ 蓝奏云下载地址:  [![apk](https://img.shields.io/badge/Apk-v1.0-green)](https://town.lanzous.com/ioMCYm8ddab)
 ## 打开捐赠
 
 ### 使用方式
@@ -42,7 +42,7 @@ implementation 'com.townwang:wechat:1.0.6'
 openWeChatToFollowInterface("gh_738e684f3c40")
 ```
 > 参数说明
-[公众号原始ID如何获取?](https://github.com/Townwang/wechat/wiki/%E5%85%AC%E4%BC%97%E5%8F%B7bizCode%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96%3F)
+[公众号原始ID如何获取?](https://github.com/Townwang/wechat/wiki/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8E%9F%E5%A7%8BID%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96%3F)
 
 ### 使用效果
 ![image.png](https://i.loli.net/2021/02/27/XMg1jvHTq6JnYZk.png)
