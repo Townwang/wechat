@@ -24,35 +24,24 @@ internal fun goWeChatLauncherUI(): Intent {
     }
 }
 
-internal fun goSosWebViewUI(bizCode: String, title: String? = null): Intent {
+internal fun goWeChatLauncherUI(originalId:String):Intent{
     return Intent().also {
         it.component = ComponentName(
+            mockWeChatData[0].first.restoreAllIllusion(),
+            mockWeChatData[0].second.restoreAllIllusion()
+        )
+        it.putExtra(
             mockWeChatData[2].first.restoreAllIllusion(),
-            mockWeChatData[2].second.restoreAllIllusion()
+            mockWeChatData[2].second.restoreAllIllusion().format(originalId)
         )
         it.putExtra(
             mockWeChatData[3].first.restoreAllIllusion(),
-            title ?: mockWeChatData[3].second.restoreAllIllusion()
+            mockWeChatData[3].second.restoreAllIllusion().toBoolean()
         )
         it.putExtra(
             mockWeChatData[4].first.restoreAllIllusion(),
-            mockWeChatData[4].second.replace("{bizCode}", "$bizCode==").restoreAllIllusion()
+            mockWeChatData[4].second.restoreAllIllusion().toInt()
         )
-    }
-}
-
-internal fun goWeChatLoadUrl(url: String, title: String? = null): Intent {
-    return Intent().also {
-        it.component =
-            ComponentName(
-                mockWeChatData[2].first.restoreAllIllusion(),
-                mockWeChatData[2].second.restoreAllIllusion()
-            )
-        it.putExtra(
-            mockWeChatData[3].first.restoreAllIllusion(),
-            title ?: mockWeChatData[3].second.restoreAllIllusion()
-        )
-        it.putExtra(mockWeChatData[4].first.restoreAllIllusion(), url)
     }
 }
 

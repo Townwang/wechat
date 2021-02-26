@@ -23,7 +23,7 @@ public class JavaActivity extends AppCompatActivity {
         binding.attention.setOnClickListener(v-> {
 //             ApiHelper.getInstance().openWeChatToFollowInterface(this, "MzA4NTY4ODUzOQ",null);
         });
-        binding.openArticle.setOnClickListener(v-> {
+        binding.add.setOnClickListener(v-> {
 //             ApiHelper.getInstance().openWeChatLoadUrl(this, "https://mp.weixin.qq.com/s/Zrj_Dbx6COy8npwgPNf9tQ",null);
         });
         binding.aliPayScan.setOnClickListener(v-> {

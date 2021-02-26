@@ -36,6 +36,7 @@ internal fun Activity.startWeZhi(view: View) {
         file.snapShot(baseContext, view)
         runOnUiThread {
             openWeChatScan()
+            Toast.makeText(this, "在相册中选择二维码扫描", Toast.LENGTH_SHORT).show()
         }
     }.start()
 }

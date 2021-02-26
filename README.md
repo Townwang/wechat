@@ -1,16 +1,16 @@
 # wechat
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Arsenal](https://img.shields.io/badge/Arsenal%20-%20SmartRefresh-4cae4c.svg)](#)
-[![JCenter](https://img.shields.io/badge/%20JCenter%20-1.0.5-5bc0de.svg)](https://bintray.com/townwang/WeChat/wechat/_latestVersion)
+[![JCenter](https://img.shields.io/badge/%20JCenter%20-1.0.6-5bc0de.svg)](https://bintray.com/townwang/WeChat/wechat/_latestVersion)
 [![MinSdk](https://img.shields.io/badge/%20MinSdk%20-%2012%2B%20-f0ad4e.svg)](https://android-arsenal.com/api?level=12)
 [![Methods](https://img.shields.io/badge/Methods%20%7C%20Size%20-%2031%20%7C%2018.2%20KB-d9534f.svg)](#)
 
-全网首发开发人员的微信API, 可无API,无权限实现一键关注公众号.一键利用微信内置浏览器打开任何网址. 附带功能 -> 个人捐赠,支付宝直接捐赠功能. api 正在不断新增
+全网首发开发人员的微信API, 可无API,无权限实现三方app内一键关注公众号.一键加好友. 附带功能 -> 个人捐赠,支付宝直接捐赠功能. api 正在不断新增
 
 ## 使用方式
 ### 在**build.gradle**引入如下库
 ```kotlin
-implementation 'com.townwang:wechat:1.0.5'
+implementation 'com.townwang:wechat:1.0.6'
 ```
 ### 下载Simple查看效果
  蓝奏云下载地址:  [![apk](https://img.shields.io/badge/Apk-v1.0-green)](https://town.lanzous.com/ifoDvm2820j)
@@ -37,28 +37,26 @@ implementation 'com.townwang:wechat:1.0.5'
 ### 使用方式
 ```kotlin
 /**
- * @param bizCode 传入微信公众号bizCode
- * @param title 打开时顶部提示文字 (不填为默认)
+ * @param originalId 传入微信公众号原始ID
  */
-openWeChatToFollowInterface("MzA4NTY4ODUzOQ")
+openWeChatToFollowInterface("gh_738e684f3c40")
 ```
 > 参数说明
-[公众号bizCode如何获取?](https://github.com/Townwang/wechat/wiki/%E5%85%AC%E4%BC%97%E5%8F%B7bizCode%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96%3F)
+[公众号原始ID如何获取?](https://github.com/Townwang/wechat/wiki/%E5%85%AC%E4%BC%97%E5%8F%B7bizCode%E6%80%8E%E4%B9%88%E8%8E%B7%E5%8F%96%3F)
 
 ### 使用效果
-![device-2021-02-23-201605.png](https://i.loli.net/2021/02/23/bwcaiLTnN9KRPjk.png)
-## 打开微信并加载Url
+![image.png](https://i.loli.net/2021/02/27/XMg1jvHTq6JnYZk.png)
+## 打开微信并加好友
 ### 使用方式
 ```kotlin
 /**
- * @param url 任意Url
- * @param title 打开时顶部提示文字 (不填为默认)
+ * @param originalId 传入微信号
  */
-openWeChatLoadUrl("https://mp.weixin.qq.com/s/Zrj_Dbx6COy8npwgPNf9tQ","在下方留言代表你来过")
+openWeChatToFollowInterface("androidsoft")
 ```
 
 ### 使用效果
-![22222222.png](https://i.loli.net/2021/02/23/RhbdGDFVoAgyUSj.png)
+![image.png](https://i.loli.net/2021/02/27/Cg1EKtBim52fXAv.png)
 ## 打开支付宝扫描
 ### 使用方式
 ```kotlin

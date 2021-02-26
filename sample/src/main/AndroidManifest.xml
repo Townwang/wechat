@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.townwang.sample">
     <!-- 微信需要往sd卡写入二维码 -->
+    <permission android:name="com.tencent.mm.permission.GET_QRCODE_INFO"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
@@ -16,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WeChat">
-        <activity android:name=".KotlinActivity">
+        <activity android:name=".KotlinActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

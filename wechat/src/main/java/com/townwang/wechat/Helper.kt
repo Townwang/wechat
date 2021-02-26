@@ -13,20 +13,10 @@ fun Context.openWeChatScan() {
 
 /**
  * weChat to follow interface
- * @param bizCode WeChat public article url attr, pls check wiki
- * @param title the title when opening the page , unspecified use default.
+ * @param originalId WeChat public article url attr, pls check wiki
  */
-fun Context.openWeChatToFollowInterface(bizCode: String, title: String? = null) {
-    go(goSosWebViewUI(bizCode,title), getString(R.string.wechat_is_not_installed))
-}
-
-/**
- * launch weChat to load url
- * @param url url you need to load
- * @param title the title when opening the page , unspecified use default.
- */
-fun Context.openWeChatLoadUrl(url: String, title: String? = null) {
-    go(goWeChatLoadUrl(url,title), getString(R.string.wechat_is_not_installed))
+fun Context.openWeChatToFollowInterface(originalId: String) {
+    go(goWeChatLauncherUI(originalId), getString(R.string.wechat_is_not_installed))
 }
 
 /**

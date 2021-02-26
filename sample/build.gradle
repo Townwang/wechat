@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.townwang.sample"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -41,9 +41,9 @@ android {
 dependencies {
 //    implementation fileTree(dir: 'libs', include: ['*.aar'])
 //    implementation(name:'wechat-release',ext:'aar')
-//    implementation fileTree(dir: 'libs', include: ['*.jar'])
-//    implementation project(path: ':wechat')
-    implementation 'com.townwang:wechat:1.0.5'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':wechat')
+//    implementation 'com.townwang:wechat:1.0.5'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
