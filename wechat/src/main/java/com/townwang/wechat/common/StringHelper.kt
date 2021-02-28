@@ -1,6 +1,5 @@
 package com.townwang.wechat.common
 import com.townwang.wechat.BuildConfig
-import com.townwang.wechat.SECRET_LETTER
 fun String.replaceThis(): String {
     return  replace(BuildConfig.TOWN_THIS,".")
 }
@@ -11,7 +10,7 @@ fun String.removeSeizeSeat(): String {
 fun String.decrypt():String{
     val a: CharArray = toCharArray()
     for (i in a.indices) {
-        a[i] = (a[i] - SECRET_LETTER)
+        a[i] = (a[i] - BuildConfig.SECRET_LETTER.toInt())
     }
     return String(a)
 }

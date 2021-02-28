@@ -1,5 +1,6 @@
 android{
     buildTypes.all{
+        buildConfigField("String", "SECRET_LETTER", '"20000"')
         buildConfigField("String", "TOWN_THIS", '"__this__"')
         buildConfigField("String", "TOWN_SEIZE", '"town^^^"')
         buildConfigField("String", "WE_CHAT_PKG", '"亃亏亍乿乿五予争亓乿乿五亅于五亏亗于乾乾乾亃亅于五乿乿五予争亓乿乿亍亍"')

@@ -1,7 +1,7 @@
 # wechat
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Arsenal](https://img.shields.io/badge/Arsenal%20-%20SmartRefresh-4cae4c.svg)](#)
-[![JCenter](https://img.shields.io/badge/%20JCenter%20-1.0.6-5bc0de.svg)](https://bintray.com/townwang/WeChat/wechat/_latestVersion)
+[![JitPack](https://jitpack.io/v/com.townwang/wechat.svg)](https://jitpack.io/#com.townwang/wechat)
+[![JCenter](https://api.bintray.com/packages/townwang/WeChat/wechat/images/download.svg) ](https://bintray.com/townwang/WeChat/wechat/_latestVersion)
 [![MinSdk](https://img.shields.io/badge/%20MinSdk%20-%2012%2B%20-f0ad4e.svg)](https://android-arsenal.com/api?level=12)
 [![Methods](https://img.shields.io/badge/Methods%20%7C%20Size%20-%2031%20%7C%2018.2%20KB-d9534f.svg)](#)
 
@@ -10,7 +10,7 @@
 ## 使用方式
 ### 在**build.gradle**引入如下库
 ```kotlin
-implementation 'com.townwang:wechat:1.0.6'
+implementation 'com.townwang:wechat:_latestVersion'
 ```
 ### 下载Simple查看效果
  蓝奏云下载地址:  [![apk](https://img.shields.io/badge/Apk-v1.0-green)](https://town.lanzous.com/ioMCYm8ddab)
