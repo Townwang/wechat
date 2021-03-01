@@ -86,10 +86,9 @@ artifacts {
     archives sourcesJar
 }
 
-// 这里是读取Bintray相关的信息，我们上传项目到github上的时候会把gradle文件传上去，所以不要把帐号密码的信息直接写在这里，写在local.properties中，这里动态读取。
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
 bintray {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
     user = properties.getProperty("bintray.user") // Bintray的用户名。
     key = properties.getProperty("bintray.apikey") // Bintray刚才保存的ApiKey。
     configurations = ['archives']
