@@ -1,13 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
 apply from: 'MockData.gradle'
-ext {
-    PUBLISH_GROUP_ID = "com.townwang"        //项目包名
-    PUBLISH_ARTIFACT_ID = 'wechat'            //项目名
-    PUBLISH_VERSION = "1.0.8"                   //版本号
-}
+//apply from: 'bintray.gradle'
 android {
     compileSdkVersion 30
     buildFeatures {
@@ -19,95 +13,8 @@ android {
         proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
 }
-// 项目引用的版本号
-version = PUBLISH_VERSION
-
-// 定义两个链接，下面会用到。
-def siteUrl = 'https://github.com/Townwang/wechat' // 项目主页。
-def gitUrl = 'git@github.com:Townwang/wechat.git' // Git仓库的url。
-
-// 唯一包名
-group = PUBLISH_GROUP_ID
-install {
-    repositories.mavenInstaller {
-        // 生成pom.xml和参数
-        pom {
-            project {
-                packaging 'aar'
-                // 项目描述
-                name 'wechat common'// 可选，项目名称。
-                description 'A variety of common tool libraries on weChat,personal developer tools'// 可选，项目描述。
-                url siteUrl // 项目主页
-                // 软件开源协议（无需更改）
-                licenses {
-                    license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-
-                //开发者基本信息
-                developers {
-                    developer {
-                        id 'townwang' // 开发者的id。
-                        name 'Townwang' // 开发者名字。
-                        email 'android@townwang.com' // 开发者邮箱。
-                    }
-                }
-                // SCM（无需更改）
-                scm {
-                    connection gitUrl // Git仓库地址。
-                    developerConnection gitUrl // Git仓库地址。
-                    url siteUrl // 项目主页。
-                }
-            }
-        }
-    }
-}
-// 生成jar包的task（无需更改）
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-// 生成jarDoc的task（无需更改）
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-    failOnError false // 忽略注释语法错误，如果用jdk1.8你的注释写的不规范就编译不过。
-}
-// 生成javaDoc的jar（无需更改）
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-
-bintray {
-    Properties properties = new Properties()
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-    user = properties.getProperty("bintray.user") // Bintray的用户名。
-    key = properties.getProperty("bintray.apikey") // Bintray刚才保存的ApiKey。
-    configurations = ['archives']
-    pkg {
-        repo = "WeChat"  // 上传到maven库。（这里要特别注意，如果写了maven报404错误，请在bintray创建一个仓库，这里填改成你创建的仓库的名字。）
-        name = PUBLISH_ARTIFACT_ID  // 发布到Bintray上的项目名字
-        userOrg = user // Bintray的用户名
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
-        publish = true // 是否是公开项目。
-    }
-
-}
 dependencies {
     api  "androidx.core:core-ktx:1.3.2"
     api 'junit:junit:4.13.2'
     api 'org.mockito:mockito-core:2.19.0'
-}
-repositories {
-    mavenCentral()
 }
