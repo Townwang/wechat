@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply from: 'MockData.gradle'
-//apply from: 'bintray.gradle'
+apply from: 'https://townwang.com/gradle/bintray.gradle'
 android {
     compileSdkVersion 30
     buildFeatures {

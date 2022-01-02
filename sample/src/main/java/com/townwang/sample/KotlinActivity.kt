@@ -22,7 +22,7 @@ class KotlinActivity : AppCompatActivity() {
             openWeChatToFollowInterface("gh_738e684f3c40")
         }
         binding.add.setOnClickListener {
-            openWeChatToFollowInterface("androidsoft")
+            openWeChatToFollowInterface(binding.wechatId.text.toString())
         }
         binding.aliPayScan.setOnClickListener {
             openAliPayScan()
